@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Facebook Node Authentication</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+  <style>
+    .card:hover {
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+      margin-bottom: 0px;
+    }
+
+    .bg {
+      /* The image used */
+      background-image: url("https://c.pxhere.com/images/d8/59/435d2a2159cf8f6916df03668563-1630982.jpg!d");
+      /* Full height */
+      height: 1000;
+
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    b{
+      color :rgba(255, 255, 255);
+    }
+    strong{
+      color :rgba(255, 255, 255);
+    }
+    p{
+      color :rgba(255, 255, 255);
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <div class="row center">
+        <div class="col s12">
+          <div class="card">
+            <div class="card-content blue lighten-3">
+              <div class="bg">
+                <!-- <span class="card-title white-text"><strong><i class="large material-icons">person</i>
+                  </strong></span> -->
+                  <img src="https://sv1.picz.in.th/images/2021/04/01/DLbHPV.png" alt="" width="401" height="296">
+
+
+                <div class="card-action">
+                  <h5><b>Name :
+                      <%= user.displayName %>
+                    </b></h5>
+                  <h6><strong>Facebook ID :</strong>:<b> <%= user.id %></b>
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
